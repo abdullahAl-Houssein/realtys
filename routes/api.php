@@ -26,6 +26,7 @@ Route::middleware('auth:api')->group(function () {
     Route::put('/houses/{id}', [HouseController::class, 'update']); // تحديث منزل
     Route::delete('/houses/{id}', [HouseController::class, 'destroy']); // حذف منزل
 });
+// khaled
 
 // مسارات عامة يمكن الوصول إليها دون مصادقة
 Route::get('/houses', [HouseController::class, 'index']); // استعراض المنازل (عام)
